@@ -9,6 +9,8 @@ import PractiseEffect from './Component/PractiseEffect'
 import FactorialCalculator from './Component/MemoCallback'
 import PractiseState from './Component/PractiseState';
 import PractiseRef from './Component/PractiseRef';
+import Apps from './Component/CardApp';
+
 
 const HomePage= ()=>{
   return(
@@ -21,11 +23,13 @@ function App() {
   return (
     <div className="App">
       <MasterPage>
-        <PractiseEffect/>
+
+        <Apps/>
+        {/* <PractiseEffect/>
         <PractiseState/>
          <PractiseRef/>
         <FactorialCalculator/>
-        
+         */}
         {/* <HomePage/>
    <Count/>
    <UseEffectFunction/>

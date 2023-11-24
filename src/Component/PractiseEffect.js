@@ -24,8 +24,7 @@
 
 // export default PractiseEffect;
 
-
-
+   
 
 import React, { useState, useEffect } from 'react';
 
@@ -66,3 +65,4 @@ function DataFetchingComponent() {
 }
 
 export default DataFetchingComponent;
+
