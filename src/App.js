@@ -1,23 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
+import Count from './Component/Count';
+import UseEffectFunction from './Component/UseEffectfunction';
+import ExpensComp from './Component/UseMemofunction';
+import ParentComp from './Component/UseCallbackFunction';
+import MasterPage from './Component/MasterPage';
+import PractiseEffect from './Component/PractiseEffect'
+import FactorialCalculator from './Component/MemoCallback'
+import PractiseState from './Component/PractiseState';
+import PractiseRef from './Component/PractiseRef';
 
+const HomePage= ()=>{
+  return(
+<div>
+<h6>hello its a home page</h6>
+</div>
+  );
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MasterPage>
+        <PractiseEffect/>
+        <PractiseState/>
+         <PractiseRef/>
+        <FactorialCalculator/>
+        
+        {/* <HomePage/>
+   <Count/>
+   <UseEffectFunction/>
+   <ExpensComp/>
+   <ParentComp/> */}
+   </MasterPage>
     </div>
   );
 }
